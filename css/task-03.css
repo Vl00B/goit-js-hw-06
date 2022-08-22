@@ -1,0 +1,16 @@
+.gallery {
+  list-style: none;
+  margin: 0px;
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+li {
+  width: 32%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10%;
+}
