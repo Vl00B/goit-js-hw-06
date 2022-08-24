@@ -18,6 +18,4 @@ for (let i = 0; i < ingredients.length; i += 1) {
   arrayOfElements.push(item);
 }
 
-for (let i = 0; i < ingredients.length; i += 1) {
-  contextElement.append(arrayOfElements[i]);
-}
+contextElement.append(...arrayOfElements);

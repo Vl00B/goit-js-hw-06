@@ -24,16 +24,19 @@ function createDivs(event) {
 
   let size = minSize;
 
+  const arrayOfBoxes = [];
+
   for (let i = 0; i < counter.value; i += 1) {
     const box = document.createElement('div');
     box.style.width = size;
     box.style.height = size;
     box.style.backgroundColor = getRandomHexColor();
-    container.append(box);
+    arrayOfBoxes.push(box);
     size = parseInt(size) + 10;
     size += 'px';
     console.log(size);
   }
 
+  container.append(...arrayOfBoxes);
   counter.value = '';
 }
